@@ -1,0 +1,25 @@
+{
+  "name": "contri-credit",
+  "version": "0.0.1",
+  "description": "Give contribution credit where contribution credit is due",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"This is not a test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the-after-hours/contri-credit.git"
+  },
+  "keywords": [
+    "git",
+    "contributions",
+    "automatic",
+    "markdown"
+  ],
+  "author": "The After Hours",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the-after-hours/contri-credit/issues"
+  },
+  "homepage": "https://github.com/the-after-hours/contri-credit#readme"
+}
