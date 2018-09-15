@@ -1,7 +1,11 @@
 
-var request = require("request");
+const request = require("request");
 
-var options = {
+//todo replace owner and repo with values pulled from git environments
+const owner = process.env.OWNER || 'jwu910';
+const repo = process.env.REPO || 'check-it-out';
+
+let options = {
     method: 'GET',
     url: `https://api.github.com/repos/${owner}/${repo}/contributors`,
     headers:
