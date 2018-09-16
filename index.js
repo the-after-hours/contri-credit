@@ -2,7 +2,9 @@ const fs = require('fs');
 const request = require('request');
 const { headerTemplate, userTemplate } = require('./template');
 
-//todo replace owner and repo with values pulled from git environments
+/**@todo Update env vars or start options
+ * @body Replace owner and repo with values pulled from git environments
+ */
 const contributors = process.env.CONTRIBUTORS || 'CONTRIBUTORS.md';
 const owner = process.env.OWNER || 'jwu910';
 const repo = process.env.REPO || 'check-it-out';
