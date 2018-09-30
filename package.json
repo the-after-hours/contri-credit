@@ -1,6 +1,14 @@
 {
   "name": "contri-credit",
   "version": "0.0.1",
+  "contri-credit": {
+    "file": "CONTRIBUTORS.md",
+    "repo": "contri-credit",
+    "owner": "the-after-hours"
+  },
+  "bin": {
+    "credit": "index.js"
+  },
   "description": "Give contribution credit where contribution credit is due",
   "main": "index.js",
   "scripts": {
@@ -23,6 +31,6 @@
   },
   "homepage": "https://github.com/the-after-hours/contri-credit#readme",
   "dependencies": {
-    "request": "^2.88.0"
+    "axios": "^0.18.0"
   }
 }
