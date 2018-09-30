@@ -71,6 +71,11 @@ if (!pkg['contri-credit']) {
   process.exit(1);
 }
 
+/**
+ * @todo: Check for existing CONTRIBUTORS.md
+ * @body: We should prompt the user to continue if they are about to overwrite a file
+ */
+
 main(
   pkg['contri-credit'].file,
   pkg['contri-credit'].owner,
