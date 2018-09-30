@@ -10,6 +10,8 @@ function main(
   owner = 'the-after-hours',
   repo = 'contri-credit'
 ) {
+  process.stdout.write('Getting contributor information...\n');
+
   axios({
     baseURL: 'https://api.github.com/',
     method: 'GET',
@@ -32,6 +34,8 @@ function main(
       process.stderr.write(error);
     })
     .then(function(response) {
+      process.stdout.write('Reponse received. Generating contributor file...\n');
+
       const userList = response.data;
 
       const writeStream = fs.createWriteStream(file);
