@@ -14,6 +14,11 @@ function main(
 ) {
   process.stdout.write('Getting contributor information...\n');
 
+/**
+* @todo: Check if we can pull contributors from branches other than master
+* @body: Currently we only pull the contributors from master, this means that whenever someone
+* pushes to master they will be missing contributors.
+*/
   axios({
     baseURL: 'https://api.github.com/',
     method: 'GET',
