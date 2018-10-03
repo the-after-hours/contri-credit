@@ -8,6 +8,12 @@ export = (app: Application) => {
     console.log(`We should grab the person and the thing -- ${context.name} -- and add their name to the contributors file, .github/contri-credit.md`);
     if (context.name === 'push'){
       console.log(`${context.payload.pusher.name} just did a ${context.name}`);
+    } 
+    else if (context.name === 'create') {
+      console.log(`${context.payload.sender.login} just did a ${context.name} AKA Pull Request`);
+    }
+      else {
+      console.log(context)
     }
   });
 

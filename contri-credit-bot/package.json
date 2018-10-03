@@ -19,7 +19,8 @@
     "lint": "standard **/*.ts --fix",
     "test": "jest && standard **/*.ts",
     "test:watch": "jest --watch --notify --notifyMode=change --coverage",
-    "test:push":"probot simulate push test/fixtures/push.labeled.json ./lib/index.js"
+    "test:push": "probot simulate push test/fixtures/push.labeled.json ./lib/index.js",
+    "test:create": "probot simulate create test/fixtures/create_branch.labeled.json ./lib/index.js"
   },
   "dependencies": {
     "probot": "^7.0.0"
