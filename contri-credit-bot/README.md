@@ -23,4 +23,4 @@ For more, check out the [Contributing Guide](CONTRIBUTING.md).
 
 ## License
 
-[ISC](LICENSE) © 2018 The After Hours <undefined> (https://github.com/the-after-hours/contri-credit)
+[ISC](LICENSE) © 2018 [The After Hours](https://github.com/the-after-hours/contri-credit)
