@@ -17,24 +17,34 @@ export = (app: Application) => {
       console.log(context)
     }
 
-    /* throwing these into comments until i get things working
+    // throwing these into comments until i get things working
     let options = {
       baseURL: 'https://api.github.com/',
-      method: 'POST',
+      method: 'PUT',
       url: `/repos/rainrivas/probot-test-playground/contents/.github/contri-credit.md`,
       headers: {
         'Cache-Control': 'no-cache',
-        'User-Agent': 'the-after-hours'
-      }
-    }
-    */
+        'Content-Type': 'application/json',
+        'User-Agent': 'the-after-hours',
+        'Authorization': `${process.env.WEBHOOK_SECRET}`
+      },
+      body:
+      {
+        message: 'Creating the contrib file',
+        content: 'c2FtcGxlIHRlc3QgZmlsZQ==',
+        commiter: { name: 'Efrain \'Rain\' Rivas', email: 'rainrivas@gmail.com' },
+        branch: 'test-branch2'
+      },
+      json: true
+    };
+
 
     /* 
     Run the GET first and see if the file exists
     If file not found we should create it (PUT)
     If it does, we should update it (PUT but with the "SHA" param)
     */
-   /* This doesn't work yet so comments
+    // This doesn't work yet so comments
     axios(options)
       .catch(function (error) {
         console.info(`we goofed`);
@@ -44,7 +54,6 @@ export = (app: Application) => {
         console.info('Reponse received.');
         console.info(response);
       });
-    */
 
     // https://developer.github.com/v3/repos/contents/#update-a-file
     // PUT /repos/:owner/:repo/contents/:path

@@ -6,13 +6,17 @@
     "repo": "contri-credit",
     "owner": "the-after-hours"
   },
-  "bin": {
-    "credit": "index.js"
-  },
   "description": "Give contribution credit where contribution credit is due",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"This is not a test\""
+    "build": "tsc -p tsconfig.json",
+    "dev": "nodemon --exec \"npm start\"",
+    "start": "probot run ./lib/index.js",
+    "lint": "standard **/*.ts --fix",
+    "test": "jest && standard **/*.ts",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "test:push": "probot simulate push test/fixtures/push.labeled.json ./lib/index.js",
+    "test:create": "probot simulate create test/fixtures/create_branch.labeled.json ./lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +26,10 @@
     "git",
     "contributions",
     "automatic",
-    "markdown"
+    "markdown",
+    "probot",
+    "github",
+    "probot-app"
   ],
   "author": "The After Hours",
   "license": "MIT",
@@ -31,6 +38,31 @@
   },
   "homepage": "https://github.com/the-after-hours/contri-credit#readme",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "probot": "^7.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.5",
+    "@types/node": "^10.5.2",
+    "eslint-plugin-typescript": "^0.12.0",
+    "jest": "^23.4.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3",
+    "ts-jest": "^23.0.0",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^18.0.0"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "parser": "typescript-eslint-parser",
+    "env": [
+      "jest"
+    ],
+    "plugins": [
+      "typescript"
+    ]
   }
 }
