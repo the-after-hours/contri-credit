@@ -38,7 +38,6 @@
   },
   "homepage": "https://github.com/the-after-hours/contri-credit#readme",
   "dependencies": {
-    "axios": "^0.18.0",
     "probot": "^7.0.0"
   },
   "devDependencies": {
