@@ -43,7 +43,9 @@ export = (app: Application) => {
       // Handle error when we can't get file
       console.error(error);
       // (if error has 404) const result = await context.github.repos.createFile({ owner, repo, path, message, content, branch, committer }); // create the file, branch (opt), committer (opt)
-
+      if(error.code === 404) {
+        console.debug('404 means it is time to make it happen capn');
+      }
     }
 
     //   let owner = 'rainrivas',
