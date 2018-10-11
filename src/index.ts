@@ -30,7 +30,8 @@ export = (app: Application) => {
     */
     let owner = context.payload.repository.owner.login,
       repo = context.payload.repository.name,
-      path = '.github/dne.file',//'.github/contri-credit.md',
+      // todo: test writing to files the bot should not be able to access
+      path = '.github/contri-credit.md', 
       ref = context.payload.ref
 
     // this returns an error if no file found : ERROR event: {"message":"Not Found","documentation_url":"https://developer.github.com/v3/repos/contents/#get-contents"}
@@ -42,9 +43,17 @@ export = (app: Application) => {
     } catch (error) {
       // Handle error when we can't get file
       console.error(error);
-      // (if error has 404) const result = await context.github.repos.createFile({ owner, repo, path, message, content, branch, committer }); // create the file, branch (opt), committer (opt)
-      if(error.code === 404) {
+      if (error.code === 404) {
         console.debug('404 means it is time to make it happen capn');
+        let branch = ref, // Have to do this becaues the createFile method doens't like having branch be set to 'ref'
+        fileBody = '\nAdding new contribs to the magic file', // eventually add the info from app.on(*) if-else blocks
+          message = 'Creating contrib file' // This is the commit message we'll be seeing
+        //  file contents need to be encoding so doing that here
+        let buff = new Buffer(fileBody);
+        let content = buff.toString('base64');
+        // eventually all these context.github calls should probably be wrapped in a try catch of their own
+        const createContrib = await context.github.repos.createFile({ owner, repo, path, message, content, branch, /*committer*/ }); // create the file, branch (opt), committer (opt)--if left blank is commiter the bot?
+        console.debug(createContrib.status) // should be a 201
       }
     }
 
