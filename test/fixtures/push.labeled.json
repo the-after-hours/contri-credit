@@ -1,29 +1,29 @@
 {
-  "ref": "refs/heads/master",
-  "before": "a6a5c3df64d57c990b8c601d423bccaab5a30831",
-  "after": "6382e336984a573301e598d34c44244fbcf1eb39",
+  "ref": "refs/heads/no-contrib-file",
+  "before": "2469e42f070a9d9711abd8e5177caac7e38fcd67",
+  "after": "bd355105830c28c254bea5af4c06934d1de4a09a",
   "created": false,
   "deleted": false,
   "forced": false,
   "base_ref": null,
-  "compare": "https://github.com/rainrivas/probot-test-playground/compare/a6a5c3df64d5...6382e336984a",
+  "compare": "https://github.com/rainrivas/probot-test-playground/compare/2469e42f070a...bd355105830c",
   "commits": [
     {
-      "id": "6382e336984a573301e598d34c44244fbcf1eb39",
-      "tree_id": "d2a6d983bc8527a1311aa1d9897f728f96c0ba14",
+      "id": "bd355105830c28c254bea5af4c06934d1de4a09a",
+      "tree_id": "3c5c32303c485aa79de52f20e8af1e0f779ec722",
       "distinct": true,
-      "message": "Another set of chagnes to test contri-credit #3",
-      "timestamp": "2018-10-02T16:05:11-07:00",
-      "url": "https://github.com/rainrivas/probot-test-playground/commit/6382e336984a573301e598d34c44244fbcf1eb39",
+      "message": "Updating contrib file with new user data2",
+      "timestamp": "2018-10-11T05:36:13Z",
+      "url": "https://github.com/rainrivas/probot-test-playground/commit/bd355105830c28c254bea5af4c06934d1de4a09a",
       "author": {
-        "name": "Efrain 'Rain' Rivas",
-        "email": "rainrivas@gmail.com",
-        "username": "rainrivas"
+        "name": "contri-credit[bot]",
+        "email": "contri-credit[bot]@users.noreply.github.com",
+        "username": "contri-credit[bot]"
       },
       "committer": {
-        "name": "Efrain 'Rain' Rivas",
-        "email": "rainrivas@gmail.com",
-        "username": "rainrivas"
+        "name": "contri-credit[bot]",
+        "email": "contri-credit[bot]@users.noreply.github.com",
+        "username": "contri-credit[bot]"
       },
       "added": [
 
@@ -32,26 +32,26 @@
 
       ],
       "modified": [
-        "test.md"
+        ".github/contri-credit.md"
       ]
     }
   ],
   "head_commit": {
-    "id": "6382e336984a573301e598d34c44244fbcf1eb39",
-    "tree_id": "d2a6d983bc8527a1311aa1d9897f728f96c0ba14",
+    "id": "bd355105830c28c254bea5af4c06934d1de4a09a",
+    "tree_id": "3c5c32303c485aa79de52f20e8af1e0f779ec722",
     "distinct": true,
-    "message": "Another set of chagnes to test contri-credit #3",
-    "timestamp": "2018-10-02T16:05:11-07:00",
-    "url": "https://github.com/rainrivas/probot-test-playground/commit/6382e336984a573301e598d34c44244fbcf1eb39",
+    "message": "Updating contrib file with new user data2",
+    "timestamp": "2018-10-11T05:36:13Z",
+    "url": "https://github.com/rainrivas/probot-test-playground/commit/bd355105830c28c254bea5af4c06934d1de4a09a",
     "author": {
-      "name": "Efrain 'Rain' Rivas",
-      "email": "rainrivas@gmail.com",
-      "username": "rainrivas"
+      "name": "contri-credit[bot]",
+      "email": "contri-credit[bot]@users.noreply.github.com",
+      "username": "contri-credit[bot]"
     },
     "committer": {
-      "name": "Efrain 'Rain' Rivas",
-      "email": "rainrivas@gmail.com",
-      "username": "rainrivas"
+      "name": "contri-credit[bot]",
+      "email": "contri-credit[bot]@users.noreply.github.com",
+      "username": "contri-credit[bot]"
     },
     "added": [
 
@@ -60,7 +60,7 @@
 
     ],
     "modified": [
-      "test.md"
+      ".github/contri-credit.md"
     ]
   },
   "repository": {
@@ -132,14 +132,14 @@
     "releases_url": "https://api.github.com/repos/rainrivas/probot-test-playground/releases{/id}",
     "deployments_url": "https://api.github.com/repos/rainrivas/probot-test-playground/deployments",
     "created_at": 1538520578,
-    "updated_at": "2018-10-02T22:59:50Z",
-    "pushed_at": 1538521517,
+    "updated_at": "2018-10-11T04:20:14Z",
+    "pushed_at": 1539236174,
     "git_url": "git://github.com/rainrivas/probot-test-playground.git",
     "ssh_url": "git@github.com:rainrivas/probot-test-playground.git",
     "clone_url": "https://github.com/rainrivas/probot-test-playground.git",
     "svn_url": "https://github.com/rainrivas/probot-test-playground",
     "homepage": null,
-    "size": 0,
+    "size": 9,
     "stargazers_count": 0,
     "watchers_count": 0,
     "language": null,
@@ -151,37 +151,37 @@
     "forks_count": 0,
     "mirror_url": null,
     "archived": false,
-    "open_issues_count": 0,
+    "open_issues_count": 4,
     "license": null,
     "forks": 0,
-    "open_issues": 0,
+    "open_issues": 4,
     "watchers": 0,
     "default_branch": "master",
     "stargazers": 0,
     "master_branch": "master"
   },
   "pusher": {
-    "name": "rainrivas",
-    "email": "rainrivas@gmail.com"
+    "name": "contri-credit[bot]",
+    "email": null
   },
   "sender": {
-    "login": "rainrivas",
-    "id": 12107963,
-    "node_id": "MDQ6VXNlcjEyMTA3OTYz",
+    "login": "contri-credit[bot]",
+    "id": 43797765,
+    "node_id": "MDM6Qm90NDM3OTc3NjU=",
     "avatar_url": "https://avatars3.githubusercontent.com/u/12107963?v=4",
     "gravatar_id": "",
-    "url": "https://api.github.com/users/rainrivas",
-    "html_url": "https://github.com/rainrivas",
-    "followers_url": "https://api.github.com/users/rainrivas/followers",
-    "following_url": "https://api.github.com/users/rainrivas/following{/other_user}",
-    "gists_url": "https://api.github.com/users/rainrivas/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/rainrivas/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/rainrivas/subscriptions",
-    "organizations_url": "https://api.github.com/users/rainrivas/orgs",
-    "repos_url": "https://api.github.com/users/rainrivas/repos",
-    "events_url": "https://api.github.com/users/rainrivas/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/rainrivas/received_events",
-    "type": "User",
+    "url": "https://api.github.com/users/contri-credit%5Bbot%5D",
+    "html_url": "https://github.com/apps/contri-credit",
+    "followers_url": "https://api.github.com/users/contri-credit%5Bbot%5D/followers",
+    "following_url": "https://api.github.com/users/contri-credit%5Bbot%5D/following{/other_user}",
+    "gists_url": "https://api.github.com/users/contri-credit%5Bbot%5D/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/contri-credit%5Bbot%5D/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/contri-credit%5Bbot%5D/subscriptions",
+    "organizations_url": "https://api.github.com/users/contri-credit%5Bbot%5D/orgs",
+    "repos_url": "https://api.github.com/users/contri-credit%5Bbot%5D/repos",
+    "events_url": "https://api.github.com/users/contri-credit%5Bbot%5D/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/contri-credit%5Bbot%5D/received_events",
+    "type": "Bot",
     "site_admin": false
   },
   "installation": {
